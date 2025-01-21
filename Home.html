@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Logo Maker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Dynamic Logo Maker</div>
+      <ul class="nav-links">
+        <li><a href="http://127.0.0.1:5500/Home.html">Home</a></li>
+        <li><a href="http://127.0.0.1:5500/AboutMe.html">About</a></li>
+        <li><a href="http://127.0.0.1:5500/Chapters.html">Chapters</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Dynamic Logo Maker</h1>
+      <div class="controls">
+        <label for="logoText">Logo Text:</label>
+        <input type="text" id="logoText" placeholder="Enter your text">
+
+        <label for="textColor">Text Color:</label>
+        <input type="color" id="textColor">
+
+        <label for="bgColor">Background Color:</label>
+        <input type="color" id="bgColor">
+
+        <label for="fontSize">Font Size:</label>
+        <input type="range" id="fontSize" min="10" max="100">
+
+        <button id="downloadBtn">Download Logo</button>
+      </div>
+
+      <div class="logo-preview" id="logoPreview">
+        <p id="previewText">Your Logo</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dynamic Logo Maker. All rights reserved.</p>
+  </footer>
+
+  <script src="Home.js"></script>
+</body>
+</html>
