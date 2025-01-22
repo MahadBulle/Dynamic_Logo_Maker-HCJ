@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dynamic Logo Maker</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <!-- Header Section -->
   <header>
@@ -21,11 +23,16 @@
 
   <!-- Main Content -->
   <main>
+    <!-- Alert Section -->
+    <div class="alert-title">
+      <h1>JavaScript Chapters!</h1>
+      <p>Choose a chapter to learn JavaScript. Click the button to display the answer to the question.</p>
+    </div>
     <!-- Chapters Section -->
-    <section class="chapters-section hidden" id="chapters">
+    <section class="chapters-section" id="chapters">
       <div class="chapters-container">
-        <h1>JavaScript Chapters</h1>
-        <p>Choose a chapter to learn JavaScript. Click the button to display the answer to the question.</p>
+        <!-- <h1>JavaScript Chapters</h1>
+        <p>Choose a chapter to learn JavaScript. Click the button to display the answer to the question.</p> -->
 
         <!-- Chapter 1 -->
         <div class="chapter">
@@ -57,8 +64,8 @@
           </p>
         </div>
 
-         <!-- Chapter 4 -->
-         <div class="chapter">
+        <!-- Chapter 4 -->
+        <div class="chapter">
           <h3>Chapter 4: Arrays</h3>
           <p><strong>Question:</strong> What is array in JavaScript?</p>
           <button class="answer-button" onclick="toggleAnswer(4)">Show Answer</button>
@@ -77,4 +84,5 @@
 
   <script src="Chapters.js"></script>
 </body>
+
 </html>
