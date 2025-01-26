@@ -13,13 +13,12 @@
       <ul class="nav-links">
         <li><a href="http://127.0.0.1:5500/Home.html">Home</a></li>
         <li><a href="http://127.0.0.1:5500/AboutMe.html">About</a></li>
-        <li><a href="http://127.0.0.1:5500/Chapters.html">Chapters</a></li>
+        <li><a href="http://127.0.0.1:5500/Chapters.html" id="chaptersLink">Chapters</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-        <!-- Alert Section -->
     <div class="alert-title">
       <h1>Welcome to the Home Page!</h1>
       <p>Explore the features and customize your logo dynamically.</p>
@@ -27,23 +26,64 @@
     <div class="container">
       <h1>Dynamic Logo Maker</h1>
       <div class="controls">
-        <label for="logoText">Logo Text:</label>
-        <input type="text" id="logoText" placeholder="Enter your text">
+        <!-- Logo Text Inputs -->
+        <label for="abbrText">Abbreviated Text:</label>
+        <input type="text" id="abbrText" placeholder="Enter abbreviated name (e.g., SE)">
 
+        <label for="fullText">Full Name:</label>
+        <input type="text" id="fullText" placeholder="Enter full name (e.g., Saxansaxo Electronics)">
+
+        <!-- Text Sizes -->
+        <label for="abbrSize">Abbreviated Text Size:</label>
+        <input type="range" id="abbrSize" min="20" max="100">
+
+        <label for="fullSize">Full Name Text Size:</label>
+        <input type="range" id="fullSize" min="10" max="50">
+
+        <!-- Text Color -->
         <label for="textColor">Text Color:</label>
         <input type="color" id="textColor">
 
-        <label for="bgColor">Background Color:</label>
-        <input type="color" id="bgColor">
+        <!-- Gradient Controls -->
+        <label for="gradientStart">Gradient Start Color:</label>
+        <input type="color" id="gradientStart">
 
-        <label for="fontSize">Font Size:</label>
-        <input type="range" id="fontSize" min="10" max="100">
+        <label for="gradientEnd">Gradient End Color:</label>
+        <input type="color" id="gradientEnd">
 
+        <label for="gradientType">Gradient Type:</label>
+        <select id="gradientType">
+          <option value="linear">Linear</option>
+          <option value="radial">Radial</option>
+        </select>
+
+        <!-- Font Style -->
+        <label for="fontStyle">Font Style for Abbreviated Text:</label>
+        <select id="fontStyle">
+          <option value="cursive">Cursive</option>
+          <option value="fantasy">Fantasy</option>
+          <option value="monospace">Monospace</option>
+          <option value="serif">Serif</option>
+          <option value="sans-serif">Sans Serif</option>
+        </select>
+
+        <!-- Shape Style -->
+        <label for="shapeStyle">Logo Shape:</label>
+        <select id="shapeStyle">
+          <option value="ellipse">Ellipse</option>
+          <option value="circle">Circle</option>
+          <option value="rectangle">Rectangle</option>
+        </select>
+
+        <!-- Download Button -->
         <button id="downloadBtn">Download Logo</button>
       </div>
 
+      <!-- Logo Preview -->
+      <canvas id="logoCanvas" class="hidden"></canvas>
       <div class="logo-preview" id="logoPreview">
-        <p id="previewText">Your Logo</p>
+        <h1 id="previewAbbr">SE</h1>
+        <p id="previewFull">Saxansaxo Electronics</p>
       </div>
     </div>
   </main>
