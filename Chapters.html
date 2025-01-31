@@ -9,85 +9,100 @@
 </head>
 
 <body>
-  <!-- Header Section -->
   <header>
     <nav class="navbar">
       <div class="logo">Dynamic Logo Maker</div>
       <ul class="nav-links">
-        <li><a href="http://127.0.0.1:5500/Home.html">Home</a></li>
-        <li><a href="http://127.0.0.1:5500/AboutMe.html">About</a></li>
-        <li><a href="http://127.0.0.1:5500/Chapters.html" id="chaptersLink">Chapters</a></li>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="AboutMe.html">About</a></li>
+        <li><a href="Chapters.html" id="chaptersLink">Chapters</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Main Content -->
   <main>
-    <!-- Alert Section -->
     <div class="alert-title">
       <h1>JavaScript Chapters!</h1>
       <p>Choose a chapter to learn JavaScript. Click the button to display the answer to the question.</p>
     </div>
-    <!-- Chapters Section -->
     <section class="chapters-section" id="chapters">
       <div class="chapters-container">
-        <!-- <h1>JavaScript Chapters</h1>
-        <p>Choose a chapter to learn JavaScript. Click the button to display the answer to the question.</p> -->
-
-        <!-- Chapter 1 -->
+        
         <div class="chapter">
-          <h3>Chapter 1: What is JavaScript?</h3>
-          <p><strong>Question:</strong> What is the purpose of JavaScript?</p>
-          <button class="answer-button" onclick="toggleAnswer(1)">Show Answer</button>
+          <h3>Chapter 1: What JavaScript Means</h3>
+          <p><strong>The Most Important Language for the Web</strong></p>
+          <button class="answer-button" onclick="toggleAnswer(1)">Show Example</button>
           <p class="answer hidden" id="answer1">
-            JavaScript is a programming language designed to create dynamic and interactive web pages.
+            <code>console.log("Hello, World!");</code>
           </p>
         </div>
 
-        <!-- Chapter 2 -->
         <div class="chapter">
-          <h3>Chapter 2: Variables</h3>
-          <p><strong>Question:</strong> What is the difference between <code>let</code> and <code>const</code>?</p>
-          <button class="answer-button" onclick="toggleAnswer(2)">Show Answer</button>
+          <h3>Chapter 2: Variables and Data Types</h3>
+          <p>You can use var, let, and const to store data.</p>
+          <button class="answer-button" onclick="toggleAnswer(2)">Show Example</button>
           <p class="answer hidden" id="answer2">
-            <code>let</code> allows reassignment, while <code>const</code> does not.
+            <code>let name = "Ali";<br>const age = 25;<br>console.log("Name: " + name + ", Age: " + age);</code>
           </p>
         </div>
 
-        <!-- Chapter 3 -->
         <div class="chapter">
-          <h3>Chapter 3: Data Types</h3>
-          <p><strong>Question:</strong> What are the types of data in JavaScript?</p>
-          <button class="answer-button" onclick="toggleAnswer(3)">Show Answer</button>
+          <h3>Chapter 3: Operators and Expressions</h3>
+          <p>Operators are used to perform calculations or evaluate data.</p>
+          <button class="answer-button" onclick="toggleAnswer(3)">Show Example</button>
           <p class="answer hidden" id="answer3">
-            JavaScript data types include strings, numbers, booleans, objects, arrays, and more.
+            <code>let x = 10;<br>let y = 5;<br>console.log(x + y); // 15<br>console.log(x > y); // true</code>
           </p>
         </div>
 
-        <!-- Chapter 4 -->
         <div class="chapter">
-          <h3>Chapter 4: Arrays</h3>
-          <p><strong>Question:</strong> What is array in JavaScript?</p>
-          <button class="answer-button" onclick="toggleAnswer(4)">Show Answer</button>
+          <h3>Chapter 4: Functions in JavaScript</h3>
+          <p>Functions allow you to reuse your code.</p>
+          <button class="answer-button" onclick="toggleAnswer(4)">Show Example</button>
           <p class="answer hidden" id="answer4">
-            JavaScript data types include strings, numbers, booleans, objects, arrays, and more.
+            <code>function greet(name) {<br> return "Hello, " + name + "!";<br>}<br>console.log(greet("Amina"));</code>
           </p>
         </div>
 
-        <!-- Chapter 5 -->
         <div class="chapter">
-          <h3>Chapter 5: Arrays</h3>
-          <p><strong>Question:</strong> What is array in JavaScript?</p>
-          <button class="answer-button" onclick="toggleAnswer(4)">Show Answer</button>
-          <p class="answer hidden" id="answer4">
-            JavaScript data types include strings, numbers, booleans, objects, arrays, and more.
+          <h3>Chapter 5: Conditional Statements</h3>
+          <p>Conditional statements are used for decision-making in code.</p>
+          <button class="answer-button" onclick="toggleAnswer(5)">Show Example</button>
+          <p class="answer hidden" id="answer5">
+            <code>let age = 20;<br>if (age >= 18) {<br> console.log("You are an adult.");<br>} else {<br> console.log("You are a minor.");<br>}</code>
+          </p>
+        </div>
+
+        <div class="chapter">
+          <h3>Chapter 6: Loops in JavaScript</h3>
+          <p>Loops help you execute repetitive tasks easily.</p>
+          <button class="answer-button" onclick="toggleAnswer(6)">Show Example</button>
+          <p class="answer hidden" id="answer6">
+            <code>for (let i = 1; i <= 5; i++) {<br> console.log("Number: " + i);<br>}</code>
+          </p>
+        </div>
+
+        <div class="chapter">
+          <h3>Chapter 7: Arrays and Objects</h3>
+          <p>Arrays and Objects are structured ways to store data.</p>
+          <button class="answer-button" onclick="toggleAnswer(7)">Show Example</button>
+          <p class="answer hidden" id="answer7">
+            <code>let fruits = ["Apple", "Banana", "Mango"];<br>let person = { name: "Khadar", age: 30 };<br>console.log(fruits[1]); // Banana<br>console.log(person.name); // Khadar</code>
+          </p>
+        </div>
+
+        <div class="chapter">
+          <h3>Chapter 8: DOM Manipulation</h3>
+          <p>DOM manipulation allows you to modify HTML and CSS using JavaScript.</p>
+          <button class="answer-button" onclick="toggleAnswer(8)">Show Example</button>
+          <p class="answer hidden" id="answer8">
+            <code>document.querySelector("h1").textContent = "Welcome to JavaScript!";</code>
           </p>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer Section -->
   <footer>
     <p>&copy; 2025 Dynamic Logo Maker. All rights reserved.</p>
   </footer>
